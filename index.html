@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyon Plomberie Plomb - Artisan Plombier à Lyon</title>
+    <meta name="description" content="Lyon Plomberie Plomb, votre plombier de confiance à Lyon. Interventions rapides, devis gratuits et services de qualité pour tous vos besoins de plomberie.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1960x1080?text=Image');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2563eb', // Blue 600
+                            dark: '#1e3a8a',    // Blue 900
+                            light: '#eff6ff',   // Blue 50
+                        },
+                        secondary: {
+                            DEFAULT: '#f59e0b', // Amber 500
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-primary"></i>
+                Lyon Plomberie Plomb
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#hero" class="hover:text-primary transition">Home</a>
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#testimonials" class="hover:text-primary transition">Testimonials</a>
+                <a href="#pricing" class="hover:text-primary transition">Pricing</a>
+                <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary-dark transition shadow-lg">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-gray-900 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <nav class="flex flex-col p-4 gap-4 text-lg font-medium text-center">
+                <a href="#hero" class="py-2 hover:bg-gray-50 rounded mobile-link">Home</a>
+                <a href="#services" class="py-2 hover:bg-gray-50 rounded mobile-link">Services</a>
+                <a href="#testimonials" class="py-2 hover:bg-gray-50 rounded mobile-link">Testimonials</a>
+                <a href="#pricing" class="py-2 hover:bg-gray-50 rounded mobile-link">Pricing</a>
+                <a href="#contact" class="bg-primary text-white py-3 rounded-lg shadow mt-2 mobile-link">
+                    Contact Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-bg h-screen min-h-[600px] flex items-center text-white pt-16">
+            <div class="container mx-auto px-4 text-center md:text-left">
+                <div class="max-w-3xl">
+                    <span class="bg-secondary text-white px-3 py-1 rounded text-sm font-bold uppercase tracking-wider mb-4 inline-block">Plombier de confiance à Lyon</span>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Intervention rapide et efficace <br><span class="text-primary-light">24h/24 - 7j/7</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
+                        Des services de plomberie professionnels, du dépannage à la rénovation complète
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg font-semibold transition text-center shadow-lg transform hover:-translate-y-1">
+                            Demandez un devis gratuit
+                        </a>
+                        <a href="#services" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-semibold transition text-center shadow-lg">
+                            Appelez-nous maintenant
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Features Banner -->
+        <section class="bg-white py-8 shadow-sm relative z-10 -mt-8 mx-4 md:mx-auto max-w-6xl rounded-xl border border-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                <div class="p-4">
+                    <i class="fa-solid fa-star text-secondary text-3xl mb-3"></i>
+                    <h3 class="font-bold text-xl text-gray-900">500+</h3>
+                    <p class="text-gray-500">Interventions réussies à Lyon</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-clock text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold text-xl text-gray-900">15 min</h3>
+                    <p class="text-gray-500">Temps moyen d’intervention en urgence</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-shield-halved text-green-500 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-xl text-gray-900">98%</h3>
+                    <p class="text-gray-500">Taux de satisfaction client</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos services de plomberie</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                        Interventions rapides, efficaces et garanties
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <article class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 group">
+                        <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Dépannage d'urgence</h3>
+                        <p class="text-gray-600">
+                            Fuite d'eau, canalisation bouchée, chauffe-eau défaillant ? Nous intervenons rapidement à toute heure.
+                        </p>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 group">
+                        <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Installation & rénovation</h3>
+                        <p class="text-gray-600">
+                            Installation de sanitaires, rénovation de salles de bains, remplacement de robinetterie et tuyauterie.
+                        </p>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 group">
+                        <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Entretien préventif</h3>
+                        <p class="text-gray-600">
+                            Inspection régulière, détartrage et maintenance pour éviter les pannes coûteuses.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Static HTML) -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ce que disent nos clients</h2>
+                    <p class="text-gray-600">La satisfaction client est notre priorité</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col h-full relative">
+                        <i class="fa-solid fa-quote-right absolute top-6 right-6 text-gray-200 text-4xl"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 text-primary flex items-center justify-center font-bold text-lg">
+                                AB
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Claire Dupont</h4>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Particulier à Lyon 6e</p>
+                            </div>
+                        </div>
+                        <div class="flex text-secondary text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Intervention rapide et très professionnelle pour une fuite un dimanche soir. Je recommande à 100%."</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col h-full relative">
+                        <i class="fa-solid fa-quote-right absolute top-6 right-6 text-gray-200 text-4xl"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-secondary flex items-center justify-center font-bold text-lg">
+                                JD
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Julien Morel</h4>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Gérant d'immeuble</p>
+                            </div>
+                        </div>
+                        <div class="flex text-secondary text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Service réactif et excellent relationnel. Ils s’occupent maintenant de toutes nos installations."</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col h-full relative">
+                        <i class="fa-solid fa-quote-right absolute top-6 right-6 text-gray-200 text-4xl"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold text-lg">
+                                MS
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Nathalie Bernard</h4>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Propriétaire</p>
+                            </div>
+                        </div>
+                        <div class="flex text-secondary text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Travail impeccable lors de la rénovation de ma salle de bains. Respect des délais et budget."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos tarifs transparents</h2>
+                    <p class="text-gray-600">Des prestations adaptées à vos besoins et à votre budget</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Basic Plan -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Intervention standard</h3>
+                        <div class="text-4xl font-bold text-primary mb-6">À partir de 80€<span class="text-base font-normal text-gray-500">/mo</span></div>
+                        <ul class="space-y-4 mb-8 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Déplacement inclus sur Lyon</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Diagnostic rapide</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Conseils personnalisés</li>
+                        </ul>
+                        <button class="w-full py-3 px-4 border border-primary text-primary font-bold rounded-lg hover:bg-primary-light transition">Select Plan</button>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-primary relative transform md:-translate-y-4">
+                        <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Pack Rénovation</h3>
+                        <div class="text-4xl font-bold text-primary mb-6">Sur devis<span class="text-base font-normal text-gray-500">/mo</span></div>
+                        <ul class="space-y-4 mb-8 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Déplacement inclus sur Lyon</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Diagnostic rapide</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Conseils personnalisés</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Étude, plan, installation clé en main</li>
+                        </ul>
+                        <button class="w-full py-3 px-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition">Select Plan</button>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Entretien annuel</h3>
+                        <div class="text-4xl font-bold text-primary mb-6">120€/an<span class="text-base font-normal text-gray-500">/mo</span></div>
+                        <ul class="space-y-4 mb-8 text-gray-600">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Déplacement inclus sur Lyon</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Diagnostic rapide</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Conseils personnalisés</li>
+                        </ul>
+                        <button class="w-full py-3 px-4 border border-primary text-primary font-bold rounded-lg hover:bg-primary-light transition">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contactez Lyon Plomberie Plomb</h2>
+                    <p class="text-gray-600">Vous avez une urgence ou un projet ? Parlons-en dès aujourd’hui</p>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-8 bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-6xl mx-auto">
+                    <!-- Contact Info -->
+                    <div class="lg:w-1/3 bg-primary p-10 text-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-location-dot mt-1 text-secondary"></i>
+                                    <p>45 Rue des Marronniers<br>69002 Lyon, France</p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <i class="fa-solid fa-phone mt-1 text-secondary"></i>
+                                    <a href="tel:+33645781290" class="text-xl font-bold hover:text-secondary transition">06 45 78 12 90</a>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <i class="fa-solid fa-envelope mt-1 text-secondary"></i>
+                                    <a href="mailto:32maxwellgauss@gmail.com" class="hover:text-secondary transition">32maxwellgauss@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10">
+                            <h4 class="font-bold border-b border-white/30 pb-2 mb-4">Hours</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex justify-between"><span>Mon - Fri</span> <span>08:00 - 20:00</span></li>
+                                <li class="flex justify-between"><span>Sat</span> <span>09:00 - 17:00</span></li>
+                                <li class="flex justify-between text-white/60"><span>Sun</span> <span>Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+<div class="lg:w-2/3 p-10 bg-gray-50">
+    <form id="contact-form" class="space-y-6">
+        <div style="display:none; opacity:0; position:absolute; left:-9999px;">
+            <label for="bambou">Bambou</label>
+            <input type="text" id="bambou" name="bambou" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                <input type="text" name="name" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                <input type="email" name="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+            </div>
+        </div>
+        <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+            <input type="text" name="subject" placeholder="Project inquiry" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+        </div>
+        
+        <div>
+             <label class="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+             <input type="tel" name="phone" placeholder="06 12 34 56 78" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+        </div>
+
+        <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+            <textarea name="message" rows="4" placeholder="How can we help you?" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-lg transition shadow-md">
+            Send Message
+        </button>
+    </form>
+    <div id="form-status" class="mt-4 text-center hidden"></div>
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <a href="#" class="text-2xl font-bold text-white mb-4 md:mb-0">Lyon Plomberie Plomb</a>
+                <div class="flex gap-6">
+                    <a href="#" class="text-2xl hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-white transition"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm pt-8 border-t border-gray-800">
+                <p>&copy; 2024 Lyon Plomberie Plomb. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('i').classList.remove('fa-xmark');
+                menuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('py-3');
+                navbar.classList.add('py-2');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.remove('py-2');
+                navbar.classList.add('py-3');
+            }
+        });
+
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerText;
+
+    contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Envoi...';
+
+    const formData = new FormData(contactForm);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+        const response = await fetch('/api/lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            contactForm.reset();
+            submitBtn.classList.remove('bg-primary', 'hover:bg-primary-dark');
+            submitBtn.classList.add('bg-green-600', 'hover:bg-green-700');
+            submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Message envoyé !';
+            setTimeout(() => {
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+                submitBtn.classList.add('bg-primary', 'hover:bg-primary-dark');
+                submitBtn.classList.remove('bg-green-600', 'hover:bg-green-700');
+            }, 5000);
+        } else {
+            throw new Error('Erreur serveur');
+        }
+    } catch (error) {
+        console.error(error);
+        alert('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.');
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+    }
+    });
+    </script>
+</body>
+</html>
